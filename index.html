@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <h1>Học table</h1>
+    <!-- tr (table row) - định nghĩa 1 hàng trong bảng -->
+    <!-- td (table data) - định nghĩa 1 ô dữ liệu trong bảng -->
+    <!-- th (table header) - định nghĩa 1 ô tiêu đề trong bảng -->
+    <!-- thead (table header) - định nghĩa phần đầu của bảng -->
+    <!-- tbody (table body) - định nghĩa phần thân của bảng -->
+    <!-- tfoot (table footer) - định nghĩa phần cuối của bảng -->
+    <!-- tbody>tr3>td*3>,... - tạo 1 khối body với 3 hàng và 3 ô dữ liệu
+      thead, tfoot áp dụng tương tự -->
+    <table>
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Kích thước</th>
+          <th>Giá</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bàn vuông</td>
+          <td>60x60</td>
+          <td>320.000 VNĐ</td>
+        </tr>
+        <tr>
+          <td>Bàn chữ nhật</td>
+          <td>90x120</td>
+          <td>400.000 VNĐ</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Học table sử dụng Colspan và Rowspan</h1>
+    <!-- colspan - chỉ định phần tử chiếm bao nhiêu cột -->
+    <!-- rowspan - chỉ định phần tử chiêm bao nhiêu hàng -->
+    <h1>VD1</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá sản phẩm</th>
+          <th>Số lượng còn lại</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Áo thun nam</td>
+          <td>1000.000 VNĐ</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Quần jean nữ</td>
+          <td>200.000 VNĐ</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Giày thể thao</td>
+          <td>3000.000 VNĐ</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Remark</td>
+          <td colspan="2">Chỉ thống kê sản phẩm trong kho</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h1>VD2</h1>
+    <table>
+      <thead>
+        <th>Tên sản phẩm</th>
+        <th colspan="2">Mô tả</th>
+        <th>Số lượng</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Laptop Dell</td>
+          <td>Mỏng nhẹ, thời thượng.</td>
+          <td>Giá: 100.000 VNĐ</td>
+          <td><pre>   20</pre></td>
+        </tr>
+        <tr>
+          <td>Laptop Lenovo</td>
+          <td>Laptop gaming, cấu hình mạnh mẽ.</td>
+          <td>Giá: 200.000 VNĐ</td>
+          <td><pre>   12</pre></td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="3">Liên hệ 032xxxx067 để đặt hàng</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
